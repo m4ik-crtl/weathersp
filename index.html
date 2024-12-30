@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Iframes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("\previsaotempo.png") no-repeat center center fixed;
+            background-size: cover;
+            width: 3840px;
+            height: 1921px;
+            position: relative;
+        }
+        .iframe1 {
+            position: absolute;
+            top: 296px;
+            left: 2248px;
+            width: 1463px;
+            height: 1188px;
+            border: none;
+        }
+        .iframe2 {
+            position: absolute;
+            top: 1507px;
+            left: 1192px;
+            width: 1400px;
+            height:187px;
+            border: none;
+			transform: scale(1.8); 
+            transform-origin: top left; 
+        }
+    </style>
+</head>
+<body>
+    <iframe class="iframe1" src="https://embed.windy.com/embed.html?type=map&amp;location=coordinates&amp;metricRain=mm&amp;metricTemp=&deg;C&amp;metricWind=km/h&amp;zoom=11&amp;overlay=radar&amp;product=radar&amp;level=surface&amp;lat=-23.649&amp;lon=-46.712&amp;detailLat=-23.645153199602426&amp;detailLon=-46.71867370605469&amp;marker=true&amp;message=true"></iframe>
+    <iframe class="iframe2" src="https://embed.windy.com/embed.html?type=forecast&amp;location=coordinates&amp;detail=true&amp;detailLat=-23.635128631366825&amp;detailLon=-46.71112716526909&amp;metricTemp=&deg;C&amp;metricRain=mm&amp;metricWind=km/h"></iframe>
+</body>
+</html>
